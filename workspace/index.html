@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <!-- Settings for not use cache -->
+    <META http-equiv="Expires" content="-1"> 
+    <META http-equiv="Pragma" content="no-cache"> 
+    <META http-equiv="Cache-Control" content="No-Cache"> 
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,13 +57,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">AboutMe</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -74,9 +78,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Hello, Nice to meet U!</h1>
-                <hr>
-                <p>Dept. Computer Science & Engineering, SoonChunHyang University.</p>
+                <h1 id="homeHeading">Hello, Have a nice day!</h1>
+                <hr style="max-width:50px">
+                <p>This page is my portfolio & introducing myself</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">About Me</a>
             </div>
         </div>
@@ -86,133 +90,635 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">History</h2>
+                    <h2 class="section-heading custom-open-table">Simple Profile <i class="fa fa-hand-o-right small" aria-hidden="true"></i></h2>
+                    <hr class="light">
+                    <table class="table table-bordered" id="profile">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">이름</td>
+                                <td>한글</td>
+                                <td>김 문 성</td>
+                            </tr>
+                            <tr>
+                                <td>영문</td>
+                                <td>Kim Mun Seong</td>
+                            </tr>
+                            <tr>
+                                <td>생년월일</td>
+                                <td colspan="2">1991. 03. 07</td>
+                            </tr>
+                            <tr>
+                                <td>주소</td>
+                                <td colspan="2">경기도 평택시 세교 3로 8(현대향촌아파트) 102동 402호</td>
+                            </tr>
+                            <tr>
+                                <td>학력</td>
+                                <td colspan="2">
+                                    <ul class="list-unstyled" style="margin:0;">
+                                        <li>평택중앙초등학교 졸업</li>
+                                        <li>한광중학교 졸업</li>
+                                        <li>청담정보통신고등학교 네트워크디자인과 졸업</li>
+                                        <li>순천향대학교 컴퓨터공학과 학사 재학중</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2 class="section-heading custom-open-timeline" style="margin-top: 2em;">History <i class="fa fa-hand-o-right small" aria-hidden="true"></i></h2>
                     <hr class="light">
                     <!-- Timeline Section -->
-                    <ul class="timeline">
+                    <ul class="timeline" id="timeline">
                         <!-- Center positon in timeline -->
-                        <li><div class="tldate">1991년</div></li>
+                        <li class="tl-section 1"><div class="tldate">어린시절(1991~1997) <i class="fa fa-angle-down" aria-hidden="true"></i></div></li>
                         <!-- Left position in timeline -->
-                        <li>
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>출생</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/7/1991</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>오후 12시경 경기도 평택시 남서울병원에서 출생</p>
-                            </div>
-                          </div>
-                        </li>
-                        <!-- Right position in timeline -->
-                        <li class="timeline-inverted">
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>부모님 결혼식</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 10/9/1991</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>만 0세의 나이로 부모님 결혼식에 참여</p>
-                            </div>
-                          </div>
-                        </li>
-                         
-                        <li><div class="tldate">1993년</div></li>
+                        <div class="tl-items 1" style="display:none;">
+                            <li>
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>출생</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1991-3-7</small></p>
+                                </div>
+                                <div class="tl-body">
+                                  <p>오후 12시경, 경기도 평택시 남서울병원에서 출생</p>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- Right position in timeline -->
+                            <li class="timeline-inverted">
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>부모님 결혼식</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1991-10-9</small></p>
+                                </div>
+                                <div class="tl-body">
+                                  <p>만 0세의 나이로 부모님 결혼식에 참여</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>대구로 이사</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1993</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>대구시 달성군으로 이사</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>경주로 이사</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1995</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>부모님과 자주 불국사에 놀러갔던 추억</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>평택으로 이사</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1996~1997</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>피아노, 보습학원을 다님</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>학원 여름캠프</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1997</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>학원에서 개최한 여름캠프에서 톱질, 망치질 등 다양한 체험</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>피아노 연주회</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1997</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>터키 행진곡으로 연주회 참여</p>
+                                </div>
+                              </div>
+                            </li>
+                        </div>
                         
-                        <li>
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>대구로 이사</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1993</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>정확한 날짜는 기억나지 않지만 대구시 달성군으로 이사</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="timeline-inverted">
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>No icon here</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/16/2014</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
-                              
-                              <p><img src="https://lorempixel.com/600/300/nightlife/" alt="lorem pixel"></p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>Some Important Date!</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/03/2014</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>Write up a quick summary of the event.</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-panel noarrow">
-                            <div class="tl-heading">
-                              <h4>Secondary Timeline Box</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/01/2014</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>This might be a follow-up post with related info. Maybe we include some extra links, tweets, user comments, photos, etc.</p>
-                            </div>
-                          </div>
-                        </li>
-                        
-                        <li><div class="tldate">Feb 2014</div></li>
-                        
-                        <li class="timeline-inverted">
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>The Winter Months</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/23/2014</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>Gee time really flies when you're having fun.</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="tl-circ"></div>
-                          <div class="timeline-panel">
-                            <div class="tl-heading">
-                              <h4>Yeah we're pretty much done here</h4>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/11/2014</small></p>
-                            </div>
-                            <div class="tl-body">
-                              <p>Wasn't this fun though?</p>
-                            </div>
-                          </div>
-                        </li>
+                        <!-- Center positon in timeline -->
+                        <li class="tl-section 2"><div class="tldate">학창시절(1998~2010) <i class="fa fa-angle-down" aria-hidden="true"></i></div></li>
+                        <!-- Left position in timeline -->
+                        <div class="tl-items 2" style="display:none;">
+                            <li class="timeline-inverted">
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>입학</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 1998</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>평택중앙초등학교 입학</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>특기적성 교육</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2001~2003</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>교내 특기적성 교육으로 컴퓨터를 배우기 시작</br>워드프로세서 2급 취득</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>부반장 선출</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2003</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>6학년, 생애 처음 대표 역할을 맡음</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>태권도를 배움</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2003</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>태권도장에 등록, 선수부반에서 연습</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>졸업</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>평택중앙초등학교 졸업</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>입학</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>한광중학교 입학</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>태권도 선수</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004~2006</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>태권도 대회 2회 출전, 예선탈락</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>축구 동아리</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2004~2006</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>친구들과 함께 친목 축구 동아리를 만들고 활동</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>졸업</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2007</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>한광중학교 졸업</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>입학</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2007</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>청담정보통신고등학교 네트워크디자인과 입학</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>1학년 반장</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2007</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>반장선거에서 뜻밖의 반장 선출</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>컴퓨터 학원 등록</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2007~2008</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>워드 1급, 정보처리기능사, ITQ 마스터, 전산회계 2급 취득</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>정보능력활용대회 참가</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2008</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>숭실대학교에서 개최한 정보능력활용대회 참가, 은상(전국 4위) 입상</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>음악줄넘기 공연</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2008</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>태권도 하면서 배운 음악줄넘기로 공연 활동</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>체육대회 우승</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2009</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>체육대회 축구 과대표로 출전, 우승</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>졸업</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2010</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>청담정보통신고등학교 네트워크디자인과 졸업</p>
+                                </div>
+                              </div>
+                            </li>
+                        </div>
+                        <!-- Center positon in timeline -->
+                        <li class="tl-section 3"><div class="tldate">대학시절(2010~현재) <i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+                        <!-- Left position in timeline -->
+                        <div class="tl-items 3">
+                            <li>
+                              <div class="tl-circ"></div>
+                              <div class="timeline-panel">
+                                <div class="tl-heading">
+                                  <h4>입학</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2010</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>청주 서원대학교 컴퓨터공학과</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>자퇴</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2010</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>1학기 종강, 대학 재정 부실과 총장비리 사태를 겪고 자퇴를 결심</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="timeline-panel noarrow">
+                                <div class="tl-heading">
+                                  <h4>재수</h4>
+                                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2010</small></p>
+                                </div>
+                                <div class="tl-body">
+                                    <p>아르바이트를 하면서 재수(수능 시험)를 준비</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>다시 입학</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>순천향대학교 컴퓨터공학과 수시 입학</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>경진대회 참가</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>C언어 기반 파일시스템을 이용한</br>개인성적관리 프로그램</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>입대 준비</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>102보충대 동반입대 신청, 합격...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>입대</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2012</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2012년 3월 27일 102보충대 군입대</br>21사단 야전가설병 배치</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>국가기술자격 취득</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2013</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>통신선로기능사, 정보처리산업기사</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>진급</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2013</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2013년 12월 27일 전문하사 임관</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>사단 포술경연대회 참가</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2014</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>통신분과 전체우승</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>전역</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2014</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2014년 6월 27일 대한민국 육군 하사</br>만기전역</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>복학</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>컴퓨터시스템 연구실에 합류</br>사물인터넷 시스템 연구, 세미나 진행</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>2015 공과대학 학술제 참여</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>IoT 기반 스마트 강의실, 금상 수상,</br>웹 서비스 기반 IoT 프록시 서버</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>2015년 한국지식정보기술학회</br>추계학술대회 참여</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>웹 서비스 기반 IoT 프록시 서버,</br>우수논문 선정</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>창업동아리</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>교내 창업동아리 프로그램에 발탁</br>"여행정보 추천 웹 서비스"</br>
+                                        교내 창업보육센터 입주,</br>
+                                        대학 '창업유망팀 300' 경진대회 참여,</br>
+                                        SK청년비상 창업멘토링 캠프 참여,</br>
+                                        2016 C-Startup 충남 창업경진대회 참여,</br>
+                                        특허 출원요청 - '질의응답 시스템'</br>
+                                        SCH SK청년비상 창업아이템 경진대회 참여, 장려상 수상</br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>외부작업 참여</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>아동학대관련 안내 앱 제작작업, 아산경찰서</br>간단한 웹 기반 앱 제작 도움</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>창업동아리</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>"스마트 화분" 삼성전자 아이디어 공모전 출품,</br>"중고제품 공유서비스"</br>
+                                        SK청년비상 3S 창업아이템 경진대회 참여,</br>장려상 수상
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>2016년 공과대학 학술제 참여</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>마이크로컨트롤러를 활용한</br>개선된 마트 결제 시스템, 장려상 수상</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>창업동아리</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>"기부형 크라우드 펀딩 웹 플랫폼"</br>실제 서비스 오픈을 목표로 개발시작</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>창업동아리</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2016 BRAND'IT PARTY INVITATION</br>행사 참여</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="tl-circ"></div>
+                                <div class="timeline-panel">
+                                    <div class="tl-heading">
+                                      <h4>집행부</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2017</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2017년도 컴퓨터공학과 부학회장 선출</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>대외활동</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2017</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>코딩교육 단체 - '멋쟁이사자처럼'</br>5기로 참여, 활동</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel noarrow">
+                                    <div class="tl-heading">
+                                      <h4>튜터링</h4>
+                                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2017</small></p>
+                                    </div>
+                                    <div class="tl-body">
+                                        <p>2학년 대상으로 자료구조 과목 튜터 역할 진행</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
                     </ul>
                     <!-- ./Timeline Section End -->
-                    <!--
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
-                    -->
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- Language -->
     <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 text-center">
+                <h2 class="section-heading">Simple Skill Set</h2>
                     <hr class="primary">
+                    <table class="table">
+                        <tr>
+                            <td rowspan="7" style="vertical-align:middle; border-right:1px solid #ddd;">S</br>K</br>I</br>L</br>L</br></br>S</br>E</br>T</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Front-end develop & design edit</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Back-end develop</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Open hardware product making</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Configuring the IoT infrastructure</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Presentation making</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">Simple image edit - photoshop</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="margin-top:2em;">Experienced Skils</h2>
+                    <hr class="primary">
+                    <h3 class="section-heading">Language</h3>
                 </div>
             </div>
         </div>
@@ -220,41 +726,283 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
+                        <i class="fa fa-4x fa-gears text-primary sr-icons"></i>
+                        <h3>C</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-industry text-primary sr-icons"></i>
+                        <h3>C++</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 47%">                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-object-ungroup text-primary sr-icons"></i>
+                        <h3>JAVA & JSP</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 69%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-html5 text-primary sr-icons"></i>
+                        <h3>HTML5</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 89%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-css3 text-primary sr-icons"></i>
+                        <h3>CSS3</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-code text-primary sr-icons"></i>
+                        <h3>JavaScript</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-android text-primary sr-icons"></i>
+                        <h3>Android</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="width: 27%">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Ruby</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /.Language -->
+        <!-- Platform -->
+        <div class="container" style="margin-top:30px">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <hr class="primary">
+                    <h3 class="section-heading">Platform</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-windows text-primary sr-icons"></i>
+                  <h3>Windows</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-linux text-primary sr-icons"></i>
+                  <h3>Linux</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-android text-primary sr-icons"></i>
+                  <h3>Android</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-amazon text-primary sr-icons"></i>
+                  <h3>AWS</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.Platform -->
+        <!-- Framework -->
+        <div class="container" style="margin-top:30px">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <hr class="primary">
+                    <h3 class="section-heading">Framework & Database</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-leaf text-primary sr-icons"></i>
+                  <h3>SpringBoot</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-road text-primary sr-icons"></i>
+                  <h3>Rails</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-chrome text-primary sr-icons"></i>
+                  <h3>Node.js</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="service-box">
+                <i class="fa fa-4x fa-server text-primary sr-icons"></i>
+                  <h3>MySQL</h3>
+                  <p class="text-muted">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.Framework -->
+        <!-- Tools -->
+        <div class="container" style="margin-top:30px">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <hr class="primary">
+                    <h3 class="section-heading">Tools</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box" style="padding: 0 15px 0 15px;">
+                  <div style="border:1px #f05f40; border-style: hidden solid; padding-bottom:15px;">
+                      <h3 style="padding-top:10px;">Web tools</h3>
+                      <p class="text-muted">
+                         Apache2, Tomcat7, Squid, XAMPP,</br>
+                         Apache proxy module, NPM, Express,</br>
+                         Bootstrap, JQuery, HTML5, CSS</br>
+                         AWS EC2, Elasticsearch, Logstash
+                      </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box" style="padding: 0 15px 0 15px;">
+                  <div style="border:1px #f05f40; border-style: hidden solid; padding-bottom:15px;">
+                      <h3 style="padding-top:10px;">IDE & Editor</h3>
+                      <p class="text-muted">
+                         Visual studio, Dev-C++, Notepad++,</br>
+                         Spring tool suite, Android studio,</br>
+                         Cloud9, Arduino IDE</br>
+                         Chrome debugger tool
+                      </p>
+                      
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box" style="padding: 0 15px 0 15px;">
+                  <div style="border:1px #f05f40; border-style: hidden solid; padding-bottom:15px;">
+                      <h3 style="padding-top:10px;">Etc</h3>
+                      <p class="text-muted">
+                         Trello, Dropbox, Google cloud, Arduino,</br>
+                         Beagle bone black, Photoshop,</br>
+                         Variable sensors, GitHub, Git,</br>
+                         PuTTy, VirtualBox, Maven, phpMyAdmin
+                      </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.Tools -->
     </section>
 
+
+<!-- projects category section -->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                <div class="col-lg-3 col-sm-6">
+                    <a href="hello-world.html" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -268,7 +1016,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -283,7 +1031,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -298,7 +1046,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -313,7 +1061,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -328,7 +1076,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -346,15 +1094,6 @@
             </div>
         </div>
     </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
 
     <section id="contact">
         <div class="container">
@@ -389,6 +1128,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

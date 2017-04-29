@@ -1,0 +1,11 @@
+.layer {display:none; position:fixed; _position:absolute; top:0; left:0; width:100%; height:100%; z-index:100;}
+.layer .bg {position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+.layer .bg:hover{cursor: -moz-zoom-out; cursor: -webkit-zoom-out; cursor: zoom-out;}
+.layer .pop-layer {display:block;}
+
+.pop-layer {display:none; position: absolute; top: 40%; left: 50%; width: 65%; height:auto;  background-color:#fff; border: 5px solid #f05f40; z-index: 10;}	
+.pop-layer .pop-container {padding: 15px 5px 10px 5px;}
+.pop-layer .btn-r {width: 100%; margin:10px 0 0 0; padding: 10px 15px 0 15px; border-top: 1px solid #DDD; text-align:right;}
+
+a.cbtn {display:inline-block; height:25px; padding:0 14px 0; border:1px solid #f05f40; background-color:#fff; font-size:13px; color:#000; line-height:25px;}
+a.cbtn:hover {border: 1px solid #f05f40; background-color:#f05f40; color:#fff;}

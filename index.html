@@ -24,8 +24,10 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
+    <!--<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">-->
+    <link href="vendor/bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="vendor/layer-popup/layer-popup.css" rel="stylesheet">
+    
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
         
@@ -63,7 +65,7 @@
                         <a class="page-scroll" href="#services">Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -998,24 +1000,44 @@
 
 
 <!-- projects category section -->
-<!-- working complete not yet
-    <section class="no-padding" id="portfolio">
+<!-- working complete not yet -->
+    <section class="no-padding" id="projects">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-3 col-sm-6">
-                    <a href="hello-world.html" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                    <a href="#" class="portfolio-box" id="project1">
+                      <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    2011 Software Competition
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Private grade administrator
                                 </div>
                             </div>
                         </div>
                     </a>
+                    
+                    <div class="layer">
+                      <div class="bg"></div>
+                      	<div id="layer2" class="pop-layer">
+                      		<div class="pop-container">
+                      			<div class="pop-conts">
+                      				<!--content //-->
+                      				
+              				<ul class="projectList">
+                        <li><iframe src="assets/projects/project1.html" frameborder="0"></iframe></li>
+                        <li><img src="img/portfolio/fullsize/2.jpg" class="img-responsive"></li>
+                      </ul>
+                      				<div class="btn-r">
+                      					<a href="#" class="cbtn">Close</a>
+                      				</div>
+                      				<!--// content-->
+                      			</div>
+                      		</div>
+                      	</div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
@@ -1102,20 +1124,23 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>
+                      Want to start your working with me?</br>
+                      If so, give me a call or send me an email. I'll be waiting your contact!</br>
+                    </p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p>010-7162-3097</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:chyin370@naver.com">chyin370@naver.com</a></p>
                 </div>
             </div>
         </div>
     </section>
-  -->
+  
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -1125,8 +1150,10 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    <!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
+    <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
+    <script src="vendor/layer-popup/layer-popup.js"></script>
+    
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
     

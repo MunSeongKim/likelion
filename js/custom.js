@@ -4,7 +4,6 @@ $(document).ready(function(){
         $('.projectList').bxSlider();
         $('.project1').load("assets/projects/project1.html");
         return false;
-        
     });
     
     

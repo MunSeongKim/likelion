@@ -1,13 +1,10 @@
 $(document).ready(function(){
     $("#project1").click(function(){
-        layer_open('layer2');
+        layer_open('projectLayer1');
         $('.projectList').bxSlider();
         $('.project1').load("assets/projects/project1.html");
         return false;
     });
-    
-    
-    
     
     $(".custom-open-table").click(function(){
         if($("#profile").css("display")!="none"){

@@ -9,7 +9,7 @@ function layer_open(el){
     }
     
     // 화면의 중앙에 레이어를 띄운다.
-    console.log(temp.outerHeight())
+    
     if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/3+'px');
     else temp.css('top', '50px');
     if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');

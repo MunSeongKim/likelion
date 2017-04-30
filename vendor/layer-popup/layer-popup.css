@@ -9,3 +9,7 @@
 
 a.cbtn {display:inline-block; height:25px; padding:0 14px 0; border:1px solid #f05f40; background-color:#fff; font-size:13px; color:#000; line-height:25px;}
 a.cbtn:hover {border: 1px solid #f05f40; background-color:#f05f40; color:#fff;}
+
+@media(max-width:768px){
+    .pop-layer {display:none; position: absolute; top: 40%; left: 50%; width: 95%; height:auto;  background-color:#fff; border: 5px solid #f05f40; z-index: 10;}	
+}

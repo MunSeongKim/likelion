@@ -1,10 +1,24 @@
 $(document).ready(function(){
-    $("#project1").click(function(){
-        layer_open('projectLayer1');
+   
+    function layerPopup(elementName){
+        layer_open(elementName);
         $('.projectList').bxSlider();
         $('.project1').load("assets/projects/project1.html");
+        screenSize = screen.width;
         return false;
+    };
+    
+    function reopen(){
+        if(screen.width != screenSize){
+            layerPopup('projectLayer1');
+        }
+    }
+    
+    $("#project1").click(function(){
+        layerPopup('projectLayer1');
     });
+   
+    
     
     $(".custom-open-table").click(function(){
         if($("#profile").css("display")!="none"){
@@ -36,4 +50,6 @@ $(document).ready(function(){
             $(this).find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down");
         }
     });
+    
+    
 });

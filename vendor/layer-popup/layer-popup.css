@@ -3,7 +3,7 @@
 .layer .bg:hover{cursor: -moz-zoom-out; cursor: -webkit-zoom-out; cursor: zoom-out;}
 .layer .pop-layer {display:block;}
 
-.pop-layer {display:none; position: absolute; top: 40%; left: 50%; width: 65%; height:auto;  background-color:#fff; border: 5px solid #f05f40; z-index: 10;}	
+.pop-layer {display:none; position: absolute; top: 40%; left: 50%; width: 60%; height:auto;  background-color:#fff; border: 5px solid #f05f40; z-index: 10;}	
 .pop-layer .pop-container {padding: 15px 5px 10px 5px;}
 .pop-layer .btn-r {width: 100%; margin:10px 0 0 0; padding: 10px 15px 0 15px; border-top: 1px solid #DDD; text-align:right;}
 

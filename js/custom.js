@@ -1,22 +1,21 @@
 $(document).ready(function(){
-   
-    function layerPopup(elementName){
-        layer_open(elementName);
-        $('.projectList').bxSlider();
-        $('.project1').load("assets/projects/project1.html");
-        screenSize = screen.width;
-        return false;
-    };
-    
-    function reopen(){
-        if(screen.width != screenSize){
-            layerPopup('projectLayer1');
-        }
-    }
-    
+
     $("#project1").click(function(){
-        layerPopup('projectLayer1');
+        layer_open('projectLayer1');
+        $(".test").load("assets/projects/term/nxt.html");
+        var swiper = new Swiper ('.swiper-container', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationType: 'fraction',
+            autoHeight: true,
+            loop: true
+        });
+        
+        return false;
     });
+    
+    
    
     
     

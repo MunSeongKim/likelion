@@ -58,7 +58,7 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
+  padding: 68px 0;
 }
 aside {
   padding: 50px 0;
@@ -461,4 +461,19 @@ td {
   font-size: 1.2em;
   color: white;
   vertical-align: middle;
+}
+
+.swiper-container {
+  width:100%;
+  height:auto;
+}
+
+.swiper-pagination {
+  color:black;
+  margin-top:20px;
+}
+
+iframe {
+  width: 100%;
+  height: inherit;
 }

@@ -4,12 +4,14 @@ $(document).ready(function(){
         layer_open('projectLayer1');
         $(".test").load("assets/projects/term/nxt.html");
         var swiper = new Swiper ('.swiper-container', {
+            initialSlide: 0,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             pagination: '.swiper-pagination',
             paginationType: 'fraction',
             autoHeight: true,
-            loop: true
+            loop: true,
+            simulateTouch: false
         });
         
         return false;
